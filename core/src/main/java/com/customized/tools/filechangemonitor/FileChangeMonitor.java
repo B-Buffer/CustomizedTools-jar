@@ -54,7 +54,7 @@ public class FileChangeMonitor extends AbstractTools {
             while(true){
                 listener.addListener(handler, new File(fileChangeMonitor.getFolderPath()));
                 synchronized(this) {
-                    wait(100);
+                    wait(2000);
                 }
             }
         } catch (Exception e) {
