@@ -5,7 +5,7 @@ A Fat Jar for all intelligent troubleshooting tool.
 
 ## Build
 
-Install Maven 3.x and Java 1.7 or higher, enter the following commands:
+Install Maven 3.x and Java 1.8 or higher, enter the following commands:
 
 ~~~
 $ git clone git@github.com:CustomizedTools/CustomizedTools-jar.git

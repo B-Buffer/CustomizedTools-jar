@@ -1,10 +1,9 @@
 package com.customized.tools.commands;
 
-import java.io.IOException;
-
 import org.jboss.aesh.cl.CommandDefinition;
 import org.jboss.aesh.cl.Option;
 import org.jboss.aesh.console.command.Command;
+import org.jboss.aesh.console.command.CommandException;
 import org.jboss.aesh.console.command.CommandResult;
 import org.jboss.aesh.console.command.invocation.CommandInvocation;
 
@@ -53,7 +52,7 @@ public class DBTesterCommand implements Command<CommandInvocation> {
 		
 
 	@Override
-	public CommandResult execute(CommandInvocation commandInvocation)throws IOException, InterruptedException {
+	public CommandResult execute(CommandInvocation commandInvocation)throws CommandException, InterruptedException {
 		
 		if(help) {
             commandInvocation.getShell().out().println(commandInvocation.getHelpInfo("dbConnectionTest"));
